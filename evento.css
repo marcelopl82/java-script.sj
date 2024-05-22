@@ -2,5 +2,6 @@
 box-sizing: border-box;}
 
 
-.main-button {height: 20vh;width: 20vw;
-background-color: rgba(44, 27, 17, 0.781);font-size: 25px;}
+.main-button {height: 10vh;width: 10vw;
+background-color: rgba(44, 27, 17, 0.781);font-size: 25px;border-radius: 10px;}
+
