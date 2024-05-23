@@ -1,3 +1,8 @@
- function buttonclicked() {alert("button clicked ok")} 
+ function buttonclicked() {alert(input.value)} 
     
-function digiteinoinput() { console.log("click on the input")}
+
+const input= document.querySelector("#main-input")/*erro  (main input sem traço não funcionou)*/
+
+function  digiteinoinput() { 
+
+console.log("digiteinoinput")}
