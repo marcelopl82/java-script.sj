@@ -1,4 +1,4 @@
- function buttonclicked() {alert(input.value)} 
+ function buttonclicked() {console.log(input.value)} 
     
 
 const input= document.querySelector("#main-input")/*erro  (main input sem traço não funcionou)*/
