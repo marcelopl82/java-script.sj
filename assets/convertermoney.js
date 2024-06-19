@@ -12,6 +12,8 @@ function convertvalues() {
 
   const dólartoday = 5.20
   const eurotoday = 6.20
+ const bitcoindoday = 19.71
+
 
   if (currencyselect.value == "dólar") {// se select estiver slecionado o valor de dólar, entre aqui//
     currencyvaluetoconverted.innerHTML = new Intl.NumberFormat("en-US", {
@@ -21,13 +23,20 @@ function convertvalues() {
     }).format(inputcurrencyvalue / dólartoday)
 
   }
-
   if (currencyselect.value == "euro") {
     currencyvaluetoconverted.innerHTML = new Intl.NumberFormat("de-DE", {
       style: "currency",
       currency: "EUR",
-
     }).format(inputcurrencyvalue / eurotoday)
+  }
+
+
+  if (currencyselect.value == "bitcoin") {
+    currencyvaluetoconverted.innerHTML = new Intl.NumberFormat("de-DE", {
+      style: "currency",
+      currency: "BTC",
+
+    }).format(inputcurrencyvalue / bitcoindoday)
 
   }
 
@@ -56,6 +65,10 @@ function changecurrency() {
     currencyname.innerHTML = "Euro"
     currencyImg.src = "./euro 3.png"
   }
+
+  if (currencyselect.value=="bitcoin")
+    {currencyname.innerHTML="bitcoin"
+      currencyImg.src = "./bitcoin 1.png"}
 }
 convertvalues()
 
